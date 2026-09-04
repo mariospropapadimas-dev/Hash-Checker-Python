@@ -3,4 +3,4 @@ A python hash checker
 
 **Under Construction**
 
-#Code is under scr/
+Code is under scr/
