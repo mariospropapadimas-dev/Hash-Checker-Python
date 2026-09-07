@@ -76,28 +76,30 @@ class HashChecker:
 
         self.result_label.pack()
 
+    def concat_str(self, str1, str2) -> str:
+        # Concat two strings with a newline for each one
+        return str(str1 + "\n") + str(str2 + "\n")
+
     def check(self):
         hash1 = self.first_hash.get()
         hash2 = self.second_hash.get()
 
         if not hash1 or not hash2:
             self.result_label.config(text="Please enter both hashes")
-
         elif len(hash1) < 16 or len(hash2) < 16:
             self.result_label.config(
                 text="Hashes must be at least 16 characters long"
             )
-
         elif hash1 == hash2:
             self.result_label.config(
                 text="Check complete! Hashes match!"
             )
-
         else:
             self.result_label.config(
-                text="Check complete! Hashes mismatch. "
-                     "Files may be corrupted or malicious"
+                text=self.concat_str("Check complete! Hashes mismatch. \n ", "Files may be corrupted or malicious")
             )
+
+
 
 
 def main():
