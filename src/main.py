@@ -97,7 +97,8 @@ class HashChecker:
             )
         else:
             self.result_label.config(
-                text=self.concat_str("Check complete! Hashes mismatch. \n ", "Files may be corrupted or malicious")
+                text=self.concat_str("Check complete! Hashes mismatch. \n ",
+                                     "Files may be corrupted or malicious")
             )
 
 
