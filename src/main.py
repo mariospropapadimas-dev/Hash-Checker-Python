@@ -79,7 +79,7 @@ class HashChecker:
 
     def concat_str(self, str1, str2) -> str:
         """Concatenate two strings with a newline for each one."""
-        return str(str1 + "\n") + str(str2 + "\n")
+        return str1 + "\n" + str2 + "\n"
 
     def check(self):
         """Check if the two hashes match."""
