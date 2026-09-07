@@ -1,4 +1,5 @@
-[![CI](https://github.com/mariospropapadimas-dev/Hash-Checker-Python/actions/workflows/build.yml/badge.svg)](https://github.com/mariospropapadimas-dev/Hash-Checker-Python/actions/workflows/build.yml)
+[![Pylint](https://github.com/mariospropapadimas-dev/Hash-Checker-Python/actions/workflows/pylint.yml/badge.svg)](https://github.com/mariospropapadimas-dev/Hash-Checker-Python/actions/workflows/pylint.yml)
+[![Python App](https://github.com/mariospropapadimas-dev/Hash-Checker-Python/actions/workflows/python-app.yml/badge.svg)](https://github.com/mariospropapadimas-dev/Hash-Checker-Python/actions/workflows/python-app.yml)
 # Hash-Checker-Python
 A python hash checker
 
