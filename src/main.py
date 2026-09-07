@@ -81,8 +81,9 @@ class HashChecker:
         return str(str1 + "\n") + str(str2 + "\n")
 
     def check(self):
-        hash1 = self.first_hash.get()
-        hash2 = self.second_hash.get()
+        # Getting the hashes from the entries and using .strip() to remove any whitespaces
+        hash1 = self.first_hash.get().strip()
+        hash2 = self.second_hash.get().strip()
 
         if not hash1 or not hash2:
             self.result_label.config(text="Please enter both hashes")
