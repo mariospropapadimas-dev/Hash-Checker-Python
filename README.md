@@ -1,3 +1,4 @@
+![CI](https://github.com/mariospropapadimas-dev/Hash-Checker-Python/actions/workflows/ci.yml/badge.svg)
 # Hash-Checker-Python
 A python hash checker
 
