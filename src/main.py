@@ -3,8 +3,9 @@ from tkinter import font
 
 
 class HashChecker:
+    """A simple hash checker application."""
     def __init__(self, root):
-
+        """Initialize the HashChecker application."""
         self.root = root
 
         self.root.title("Hash Checker")
@@ -63,7 +64,7 @@ class HashChecker:
         )
 
     def draw_ui(self):
-        # Draw UI
+        """Draw the UI"""
         self.label_title.pack()
 
         self.entry_prompt_first.pack()
@@ -77,10 +78,12 @@ class HashChecker:
         self.result_label.pack()
 
     def concat_str(self, str1, str2) -> str:
-        # Concat two strings with a newline for each one
+        """Concatenate two strings with a newline for each one."""
         return str(str1 + "\n") + str(str2 + "\n")
 
     def check(self):
+        """Check if the two hashes match."""
+
         # Getting the hashes from the entries and using .strip() to remove any whitespaces
         hash1 = self.first_hash.get().strip()
         hash2 = self.second_hash.get().strip()
@@ -105,6 +108,7 @@ class HashChecker:
 
 
 def main():
+    """Main function to run the hash checker application."""
     root = tk.Tk()
     app = HashChecker(root)
     app.draw_ui()
@@ -113,3 +117,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
