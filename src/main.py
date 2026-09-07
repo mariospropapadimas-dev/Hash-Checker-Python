@@ -8,8 +8,10 @@ def check():
     hash1 = firstHash.get()
     hash2 = secondHash.get()
 
-    if hash1 is None or hash2 is None:
-        resultLabel.config(text="Empty Hash")
+    if hash1 == "" or hash2 == "":
+        resultLabel.config(text="Please enter both hashes")
+    elif len(hash1) < 16 or len(hash2) < 16:
+        resultLabel.config(text="Hashes must be at least 16 characters long")
     elif hash1 == hash2:
         resultLabel.config(text="Check complete! Hashes match!")
     else:
@@ -27,13 +29,13 @@ window.geometry("800x600")
 # Design ahh system
 mainTitleFont = font.Font(
     family="Inter",
-    size=25,
+    size=30,
     weight="bold"
 )
 
 mainTextFont = font.Font(
     family="Inter",
-    size=10,
+    size=20,
     weight="bold"
 )
 
@@ -61,8 +63,12 @@ resultLabel = Label(
 
 # entries for hashes
 
-firstHash = Entry()
-secondHash = Entry()
+firstHash = Entry(
+    width=60
+)
+secondHash = Entry(
+    width=60
+)
 
 # Buttons
 
@@ -79,11 +85,11 @@ checkButton = Button(
 labelTitle.pack()
 
 entryPromptFirst.pack()
-firstHash.pack()
+firstHash.pack(ipadx=20, ipady=5)
 entryPromptSecond.pack()
-secondHash.pack()
+secondHash.pack(ipadx=20, ipady=5)
 
-checkButton.place(x=350, y=150)
+checkButton.pack(pady=50)
 
 resultLabel.pack()
 
