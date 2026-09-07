@@ -1,9 +1,11 @@
+"""A simple hash checker application."""
+
 import tkinter as tk
 from tkinter import font
 
 
 class HashChecker:
-    """A simple hash checker application."""
+    """The class for the HashChecker application."""
     def __init__(self, root):
         """Initialize the HashChecker application."""
         self.root = root
@@ -117,4 +119,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
