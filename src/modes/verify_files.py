@@ -1,9 +1,10 @@
 """The VerifyFilesMode mode for the application."""
 
-
 import tkinter as tk
 
-class VerifyFilesMode:  # pylint: disable=too-few-public-methods
+
+class VerifyFilesMode:
+    # pylint: disable=too-few-public-methods
     """The class for the VerifyFilesMode mode."""
 
     def __init__(self, parent, design):
