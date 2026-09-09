@@ -70,4 +70,3 @@ class HashChecker:
         self.content_frame.pack()
 
         self.on_selection_change()
-
