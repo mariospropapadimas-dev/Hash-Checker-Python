@@ -6,12 +6,12 @@ from tkinter.ttk import Combobox
 
 
 class AppUtils:
-     """Utility functions for the application."""
+    """Utility functions for the application."""
 
-     @staticmethod
-     def concat_str(str1, str2) -> str:
-         """Concatenate two strings with a newline for each one."""
-         return str1 + "\n" + str2 + "\n"
+    @staticmethod
+    def concat_str(str1, str2) -> str:
+        """Concatenate two strings with a newline for each one."""
+        return str1 + "\n" + str2 + "\n"
 
 class DesignSystem:
     """The class for the design system"""
@@ -180,7 +180,12 @@ class VerifyFilesMode:
         self.parent = parent
         self.design = design
 
-        self.under_construction = tk.Label(self.parent, text="Under Construction", font=self.design.main_text_font)
+        self.under_construction = tk.Label(
+            self.parent,
+            text="Under Construction",
+            font=self.design.main_text_font
+        )
+
     def draw_ui(self):
         """Draw the UI"""
         self.under_construction.pack()
