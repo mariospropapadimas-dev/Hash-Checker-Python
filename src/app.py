@@ -3,9 +3,9 @@
 import tkinter as tk
 from tkinter.ttk import Combobox
 
-from design_system import DesignSystem
-from modes.compare_hashes import CompareHashesMode
-from modes.verify_files import VerifyFilesMode
+from src.design_system import DesignSystem
+from src.modes.compare_hashes import CompareHashesMode
+from src.modes.verify_files import VerifyFilesMode
 
 
 class HashChecker:

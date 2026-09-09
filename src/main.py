@@ -2,7 +2,7 @@
 
 import tkinter as tk
 
-from app import HashChecker
+from src.app import HashChecker
 
 
 def main():
